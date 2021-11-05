@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                  number = currentText.substring(0, currentText.length()-1);
                  btnPoint.setEnabled(true);
                  break;
-            case R.id.btn_pi: number = "3.14"; history.setText("3.1415926535"); break;
+            case R.id.btn_pi: number = Math.PI + ""; history.setText(Math.PI + ""); break;
             case R.id.btn_sin: number = Math.sin(Math.toRadians(Double.parseDouble(number))) + "";
                  history.setText("sin(" + edInputNum.getText() + ")");
                  break;
